@@ -159,9 +159,11 @@ header .link:hover {
     align-items: center;
     justify-content: center;
     margin: 0px 1vw 0px 0px;
-    padding: 0.6vw;
+    padding: 0.5vw;
     color: #0065FC;
     font-size: 2vw;
+    width: 2.4vw;
+    height: 2.4vw;
 }
 
 .page-notes {
@@ -232,6 +234,10 @@ header .link:hover {
     object-fit: cover;
     width: inherit;
     height: 10vw;
+}
+
+#accommodation figcaption {
+    padding-top: 0.2vw;
 }
 
 figcaption {
@@ -379,7 +385,6 @@ footer strong {
 
 @media all and (max-device-width: 480px) { 
     header {
-        width: 100%;
         height: 30vw;
         margin: 0 25px;
         display: grid;
@@ -569,7 +574,7 @@ footer strong {
     #accommodation .accommodation_figure img {
         width: 100vw;
         height: 35vw;
-        margin: 0 0 2vw 0;
+        margin: 0 0 4vw 0;
     }
     
     #accommodation .accommodation_figure figcaption {
