@@ -31,19 +31,21 @@ header {
     font-size: 90%;
     color: black;
     margin: 1vw 0vw;
-    display: inline-flex;
-    justify-content: space-between;
+    display: inline-block;
     align-items: center;
     width: 95vw;
-    white-space: nowrap;
 }
 
 header .logo {
     width: auto;
     height: 5vw;
-    padding: 0 45vw 0 0.2em;
+    padding: 0 42vw 0 0.2em;
     margin: 0;
-    align-self: center;
+    vertical-align: top;
+}
+
+header nav {
+    display: inline-block;
 }
 
 header ul {
@@ -52,19 +54,17 @@ header ul {
 }
 
 header ul li {
-    display: inline-flex;
-    padding: 0 3vw;
-    margin: 0;
+    display: inline-block;
+    padding: 12px 3vw 0 3vw;
     font-size: 1.5vw;
+    vertical-align: top;
 }
 
 #SignUp {
     font-size: 1.5vw;
-    margin: 0 0 0 0;
-    padding-right: 0.2em;
-    order: 3;
+    padding: 12px 0.2em 0 0;
+    float: right;
     color: #0065FC;
-    align-self: center;
 }
 
 header .link:hover {
@@ -73,7 +73,6 @@ header .link:hover {
     font-weight: lighter;
     color: #0065FC;
 }
-
 
 .find-destination {
     margin: 2vw 0 0 0;
@@ -398,7 +397,7 @@ footer strong {
     
     header .pages {
         grid-column: 1 / -1;
-        margin: 0 20vw;
+        margin: auto;
         border-bottom: 0.5vw solid #F2F2F2;
     }
     
@@ -418,6 +417,7 @@ footer strong {
         grid-column: 2 /-1;
         justify-self: right;
         align-self: center;
+        white-space: nowrap;
     }
     
     .find-destination {
